@@ -1,4 +1,5 @@
 language: c
 before_install:
-  - sudo apt-get install aspell
+  - sudo apt-get -qq update
+  - sudo apt-get install -y aspell
 script: ./test
