@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ `cat text.txt | aspell -l en_US list | wc -c` -eq 0 ]
+then
+    echo Spelling ok
+else
+    echo Bad spelling
+    exit 1
+fi
